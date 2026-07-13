@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💖 Para Lusdith - 2025 ..w 💖</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #0a0a0f;
+            font-family: 'Courier New', 'Segoe UI', monospace;
+            padding: 20px;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 200, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 200, 0.05) 0%, transparent 50%),
+                linear-gradient(145deg, #0a0a0f, #1a0a1a);
+        }
+
+        /* Efecto de rejilla tecnológica */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 200, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 200, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .tabs-container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: rgba(10, 10, 20, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 25px 20px 30px 20px;
+            box-shadow: 0 0 60px rgba(0, 255, 200, 0.1), 0 0 120px rgba(255, 0, 200, 0.05);
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Línea de terminal animada */
+        .terminal-line {
+            color: #00ffc8;
+            font-size: 0.7rem;
+            opacity: 0.5;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 5px;
+            font-family: 'Courier New', monospace;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.1; }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.4rem;
+            color: #00ffc8;
+            text-shadow: 0 0 30px rgba(0, 255, 200, 0.3), 0 0 60px rgba(0, 255, 200, 0.1);
+            margin-bottom: 2px;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 4px;
+        }
+
+        h1 .highlight {
+            color: #ff6bcd;
+            text-shadow: 0 0 30px rgba(255, 107, 205, 0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #8899aa;
+            font-size: 0.9rem;
+            background: rgba(0, 255, 200, 0.05);
+            display: inline-block;
+            padding: 4px 24px;
+            border-radius: 20px;
+            margin: 0 auto 20px auto;
+            border: 1px solid rgba(0, 255, 200, 0.15);
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+        }
+
+        .year-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6bcd, #ff2d95);
+            color: #fff;
+            padding: 2px 16px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 8px;
+            box-shadow: 0 0 20px rgba(255, 107, 205, 0.3);
+        }
+
+        /* Pestañas estilo terminal */
+        .tabs {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(0, 255, 200, 0.1);
+            padding-bottom: 12px;
+        }
+
+        .tab-btn {
+            background: rgba(0, 255, 200, 0.05);
+            border: 1px solid rgba(0, 255, 200, 0.15);
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #8899aa;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tab-btn:hover {
+            background: rgba(0, 255, 200, 0.1);
+            color: #00ffc8;
+            border-color: rgba(0, 255, 200, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 255, 200, 0.05);
+        }
+
+        .tab-btn.active {
+            background: rgba(0, 255, 200, 0.15);
+            border-color: #00ffc8;
+            color: #00ffc8;
+            box-shadow: 0 0 30px rgba(0, 255, 200, 0.05);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(15px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== FOTOS ===== */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .photo-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 1/1;
+            cursor: pointer;
+            border: 2px solid rgba(0, 255, 200, 0.15);
+            transition: 0.4s;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo-card:hover {
+            transform: scale(1.05) rotate(-1deg);
+            border-color: rgba(0, 255, 200, 0.5);
+            box-shadow: 0 12px 40px rgba(0, 255, 200, 0.1);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo-card .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 20px 10px 12px 10px;
+            color: #00ffc8;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-align: center;
+            opacity: 0;
+            transition: 0.4s;
+            font-family: 'Courier New', monospace;
+        }
+
+        .photo-card:hover .overlay {
+            opacity: 1;
+        }
+
+        .photo-card .heart-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            font-size: 4rem;
+            opacity: 0;
+            transition: 0.4s;
+            pointer-events: none;
+            text-shadow: 0 0 60px rgba(255, 0, 200, 0.8);
+        }
+
+        .photo-card.liked .heart-overlay {
+            animation: popHeart 0.8s ease forwards;
+        }
+
+        @keyframes popHeart {
+            0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+            50% { transform: translate(-50%, -50%) scale(1.8); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+        }
+
+        /* ===== CORAZONES ===== */
+        .heart-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .heart-card {
+            background: rgba(0, 255, 200, 0.05);
+            backdrop-filter: blur(4px);
+            border-radius: 12px;
+            padding: 16px 6px 12px 6px;
+            cursor: pointer;
+            transition: 0.25s;
+            border: 1px solid rgba(0, 255, 200, 0.1);
+            text-align: center;
+            min-height: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .heart-card:hover {
+            transform: scale(1.05) translateY(-5px);
+            background: rgba(0, 255, 200, 0.1);
+            border-color: rgba(0, 255, 200, 0.3);
+            box-shadow: 0 8px 30px rgba(0, 255, 200, 0.05);
+        }
+
+        .heart-card:active {
+            transform: scale(0.95);
+        }
+
+        .heart-icon {
+            font-size: 3.2rem;
+            line-height: 1;
+            filter: drop-shadow(0 4px 20px rgba(255, 0, 200, 0.2));
+        }
+
+        .heart-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #00ffc8;
+            background: rgba(0, 255, 200, 0.1);
+            padding: 3px 12px;
+            border-radius: 20px;
+            margin-top: 6px;
+            border: 1px solid rgba(0, 255, 200, 0.1);
+            font-family: 'Courier New', monospace;
+            letter-spacing: 1px;
+        }
+
+        /* ===== MÚSICA ===== */
+        .music-player {
+            background: rgba(0, 255, 200, 0.03);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            padding: 25px 20px;
+            border: 1px solid rgba(0, 255, 200, 0.1);
+            margin: 10px 0;
+        }
+
+        .music-player .song-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .music-player .song-info .cover {
+            width: 70px;
+            height: 70px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #00ffc8, #ff2d95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: 0 6px 30px rgba(0, 255, 200, 0.15);
+            flex-shrink: 0;
+        }
+
+        .music-player .song-details {
+            flex: 1;
+        }
+
+        .music-player .song-details .title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #00ffc8;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 1px;
+        }
+
+        .music-player .song-details .artist {
+            font-size: 0.85rem;
+            color: #8899aa;
+            font-family: 'Courier New', monospace;
+        }
+
+        .music-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0 10px 0;
+        }
+
+        .music-controls button {
+            background: rgba(0, 255, 200, 0.05);
+            border: 1px solid rgba(0, 255, 200, 0.15);
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00ffc8;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .music-controls button:hover {
+            background: rgba(0, 255, 200, 0.15);
+            border-color: rgba(0, 255, 200, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 255, 200, 0.05);
+        }
+
+        .music-controls button:active {
+            transform: scale(0.9);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 255, 200, 0.1);
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            margin-top: 8px;
+        }
+
+        .progress-bar .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #00ffc8, #ff2d95);
+            border-radius: 10px;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: #8899aa;
+            font-weight: 600;
+            margin-top: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .playlist {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .playlist-item {
+            background: rgba(0, 255, 200, 0.03);
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid rgba(0, 255, 200, 0.05);
+            color: #8899aa;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+        }
+
+        .playlist-item:hover {
+            background: rgba(0, 255, 200, 0.08);
+            transform: translateX(5px);
+            border-color: rgba(0, 255, 200, 0.15);
+            color: #00ffc8;
+        }
+
+        .playlist-item.active {
+            background: rgba(0, 255, 200, 0.1);
+            border-color: rgba(0, 255, 200, 0.2);
+            color: #00ffc8;
+            font-weight: 600;
+        }
+
+        .playlist-item .num {
+            background: rgba(0, 255, 200, 0.05);
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #00ffc8;
+            border: 1px solid rgba(0, 255, 200, 0.1);
+        }
+
+        /* ===== MENSAJES ===== */
+        .message-box {
+            background: rgba(0, 255, 200, 0.03);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 15px 0 10px 0;
+            border: 1px dashed rgba(0, 255, 200, 0.15);
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #mensajeDisplay,
+        #mensajeDisplayCorazones {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00ffc8;
+            line-height: 1.5;
+            font-family: 'Courier New', monospace;
+            text-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+        }
+
+        .btn-sorpresa {
+            background: rgba(0, 255, 200, 0.05);
+            border: 1px solid rgba(0, 255, 200, 0.15);
+            border-radius: 10px;
+            padding: 12px 28px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #00ffc8;
+            backdrop-filter: blur(6px);
+            cursor: pointer;
+            transition: 0.25s;
+            margin: 8px auto 0 auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: fit-content;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 1px;
+        }
+
+        .btn-sorpresa:hover {
+            background: rgba(0, 255, 200, 0.15);
+            border-color: rgba(0, 255, 200, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 255, 200, 0.05);
+        }
+
+        .btn-sorpresa:active {
+            transform: translateY(1px);
+        }
+
+        /* ===== CONFETI ===== */
+        .confetti-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 999;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            opacity: 0.7;
+            animation: caerConfeti linear forwards;
+            border-radius: 2px;
+        }
+
+        @keyframes caerConfeti {
+            0% { transform: translateY(-10vh) rotate(0deg) scale(0.5); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(720deg) scale(1.2); opacity: 0; }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 500px) {
+            .heart-grid { gap: 10px; }
+            .heart-icon { font-size: 2.5rem; }
+            .heart-card { min-height: 90px; padding: 12px 4px; }
+            .photo-grid { grid-template-columns: repeat(2, 1fr); }
+            .tabs { gap: 4px; }
+            .tab-btn { font-size: 0.7rem; padding: 8px 12px; min-width: 60px; }
+            h1 { font-size: 1.6rem; letter-spacing: 2px; }
+            .music-player .song-info .cover { width: 50px; height: 50px; font-size: 1.8rem; }
+        }
+
+        /* Scroll personalizado */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 255, 200, 0.03);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 255, 200, 0.2);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 255, 200, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <div class="tabs-container">
+        <!-- Línea de terminal -->
+        <div class="terminal-line">$ love --target=Lusdith --year=2025 --style=informatica</div>
+
+        <h1>
+            💖 <span class="highlight">Lusdith</span> 💖
+            <span class="year-badge">2025</span>
+        </h1>
+        <div style="text-align: center;">
+            <span class="subtitle">✦ Modo informática · Amor infinito ✦</span>
+        </div>
+
+        <!-- Pestañas -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="fotos">📸 Fotos</button>
+            <button class="tab-btn" data-tab="corazones">💖 Corazones</button>
+            <button class="tab-btn" data-tab="musica">🎵 Música</button>
+        </div>
+
+        <!-- ===== FOTOS ===== -->
+        <div class="tab-content active" id="tab-fotos">
+            <div class="photo-grid" id="photoGrid"></div>
+            <div class="message-box">
+                <div id="mensajeDisplay">💕 Toca una foto para darle like 💕</div>
+            </div>
+            <button class="btn-sorpresa" id="btnSorpresaFotos">
+                <span>⚡</span> Sorpresa Cyber-Love <span>💝</span>
+            </button>
+        </div>
+
+        <!-- ===== CORAZONES ===== -->
+        <div class="tab-content" id="tab-corazones">
+            <div class="heart-grid" id="heartGrid"></div>
+            <div class="message-box">
+                <div id="mensajeDisplayCorazones">💖 Toca un corazón 💖</div>
+            </div>
+            <button class="btn-sorpresa" id="btnSorpresaCorazones">
+                <span>💫</span> Sorpresa Digital <span>💞</span>
+            </button>
+        </div>
+
+        <!-- ===== MÚSICA ===== -->
+        <div class="tab-content" id="tab-musica">
+            <div class="music-player">
+                <div class="song-info">
+                    <div class="cover" id="currentCover">🎵</div>
+                    <div class="song-details">
+                        <div class="title" id="currentTitle">Canción para Lusdith</div>
+                        <div class="artist" id="currentArtist">💕 2025</div>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <button id="prevBtn">⏮</button>
+                    <button id="playBtn">▶️</button>
+                    <button id="nextBtn">⏭</button>
+                    <button id="loopBtn">🔁</button>
+                </div>
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress" id="progressFill"></div>
+                </div>
+                <div class="time-display">
+                    <span id="currentTime">0:00</span>
+                    <span id="totalTime">0:00</span>
+                </div>
+                <div class="playlist" id="playlist"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            // ============================================================
+            // 1. CONFIGURACIÓN - PERSONALIZADO PARA LUSDITH 2025
+            // ============================================================
+
+            // --- FOTOS (reemplaza con tus imágenes) ---
+            const fotos = [
+                { url: 'img/img.jpeg', nombre: 'Lusdith 2025' },
+                { url: 'img/img2.jpeg', nombre: 'Amor infinito' },
+                { url: 'img/img1.jpeg', nombre: 'Eres luz' }
+            ];
+
+            // --- CANCIONES (reemplaza con tu música) ---
+            const canciones = [{
+                titulo: 'Canción para Lusdith',
+                artista: 'Amor 2025 💕',
+                url: 'musica/music.mp3',
+                cover: '💕'
+         
+            }];
+
+            // --- MENSAJES PERSONALIZADOS para Lusdith ---
+            const mensajes = [
+                "Lusdith, eres mi código fuente de felicidad 💻❤️",
+                "Eres el algoritmo perfecto de mi vida 🧮",
+                "Contigo, el sistema siempre funciona ✅",
+                "Eres mi variable favorita: amor = infinito ∞",
+                "Lusdith, eres mi mejor error (el único que quiero) 😍",
+                "Eres el debug de mi corazón 🐛❤️",
+                "Mi RAM siempre está llena de ti 🧠",
+                "Lusdith 2025: el mejor release de mi vida 🚀",
+                "Eres mi firewall contra la tristeza 🔥",
+                "En el servidor de mi corazón, solo tienes tú acceso root 👑",
+                "Eres mi lenguaje de programación favorito 💕",
+                "Contigo, hasta el bug más feo se vuelve hermoso 🐞✨",
+                "Eres mi commit de amor eterno 💾",
+                "Lusdith, eres mi pull request aceptada ✅",
+                "En mi base de datos, solo existes tú 📊",
+                "Eres mi conexión favorita 🌐",
+                "Lusdith, eres mi compilador de felicidad ⚡",
+                "Mi código no funciona sin ti 🖥️",
+                "Eres mi loop infinito de amor 🔄",
+                "Lusdith, eres mi mejor función de la vida 🎯"
+            ];
+
+            // Frases sorpresa (estilo informática)
+            const frasesSorpresa = [
+                "⚡ ¡Lusdith, eres un hack de la realidad! ⚡",
+                "💻 Eres el mejor código que he escrito",
+                "🚀 Lusdith 2025: el año de nuestro amor",
+                "🔮 Eres mi predicción favorita",
+                "💾 Te guardo en mi memoria RAM eternamente",
+                "🌐 Eres mi conexión a internet del corazón",
+                "💡 Eres mi idea más brillante",
+                "🎮 Con Lusdith, la vida es el mejor juego",
+                "📡 Mi señal siempre te busca a ti",
+                "⚙️ Eres la pieza que completa mi sistema"
+            ];
+
+            // ============================================================
+            // 2. REFERENCIAS
+            // ============================================================
+            const confettiContainer = document.getElementById('confettiContainer');
+            const tabs = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            const photoGrid = document.getElementById('photoGrid');
+            const btnSorpresaFotos = document.getElementById('btnSorpresaFotos');
+
+            const heartGrid = document.getElementById('heartGrid');
+            const mensajeDisplayCorazones = document.getElementById('mensajeDisplayCorazones');
+            const btnSorpresaCorazones = document.getElementById('btnSorpresaCorazones');
+
+            const playBtn = document.getElementById('playBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const loopBtn = document.getElementById('loopBtn');
+            const progressFill = document.getElementById('progressFill');
+            const progressBar = document.getElementById('progressBar');
+            const currentTime = document.getElementById('currentTime');
+            const totalTime = document.getElementById('totalTime');
+            const currentTitle = document.getElementById('currentTitle');
+            const currentArtist = document.getElementById('currentArtist');
+            const currentCover = document.getElementById('currentCover');
+            const playlistEl = document.getElementById('playlist');
+
+            const mensajeDisplay = document.getElementById('mensajeDisplay');
+
+            // ============================================================
+            // 3. CONFETI (versión neón)
+            // ============================================================
+            function lanzarConfeti(cantidad = 25) {
+                const colores = ['#00ffc8', '#ff2d95', '#ff6bcd', '#ffa502', '#2ed573', '#1e90ff', '#a29bfe', '#fdcb6e', '#e17055',
+                    '#00b894'
+                ];
+                for (let i = 0; i < cantidad; i++) {
+                    const confeti = document.createElement('div');
+                    confeti.classList.add('confetti');
+                    const size = Math.floor(Math.random() * 12) + 6;
+                    confeti.style.width = size + 'px';
+                    confeti.style.height = size + 'px';
+                    confeti.style.background = colores[Math.floor(Math.random() * colores.length)];
+                    confeti.style.left = Math.random() * 100 + '%';
+                    confeti.style.animationDuration = (Math.random() * 2 + 1.5) + 's';
+                    confeti.style.animationDelay = (Math.random() * 0.8) + 's';
+                    confeti.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+                    confeti.style.boxShadow = '0 0 10px ' + confeti.style.background;
+                    confettiContainer.appendChild(confeti);
+                    setTimeout(() => { if (confeti.parentNode) confeti.remove(); }, 3500);
+                }
+            }
+
+            // ============================================================
+            // 4. PESTAÑAS
+            // ============================================================
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    tabContents.forEach(tc => tc.classList.remove('active'));
+                    document.getElementById('tab-' + this.dataset.tab).classList.add('active');
+                    lanzarConfeti(10);
+                });
+            });
+
+            // ============================================================
+            // 5. FOTOS
+            // ============================================================
+            function generarFotos() {
+                photoGrid.innerHTML = '';
+                fotos.forEach((foto, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'photo-card';
+                    card.dataset.index = index;
+                    const img = document.createElement('img');
+                    img.src = foto.url;
+                    img.alt = foto.nombre;
+                    img.loading = 'lazy';
+                    const overlay = document.createElement('div');
+                    overlay.className = 'overlay';
+                    overlay.textContent = '❤️ ' + foto.nombre;
+                    const heartOverlay = document.createElement('div');
+                    heartOverlay.className = 'heart-overlay';
+                    heartOverlay.textContent = '❤️';
+                    card.appendChild(img);
+                    card.appendChild(overlay);
+                    card.appendChild(heartOverlay);
+                    card.addEventListener('click', function() {
+                        this.classList.add('liked');
+                        mensajeDisplay.textContent = '💖 ¡Like a "' + foto.nombre + '"! 💖';
+                        lanzarConfeti(20);
+                        setTimeout(() => { this.classList.remove('liked'); }, 800);
+                    });
+                    photoGrid.appendChild(card);
+                });
+            }
+
+            btnSorpresaFotos.addEventListener('click', function() {
+                const frase = frasesSorpresa[Math.floor(Math.random() * frasesSorpresa.length)];
+                const fotoRandom = fotos[Math.floor(Math.random() * fotos.length)];
+                mensajeDisplay.textContent = '⚡ ' + frase + ' ⚡  →  ' + fotoRandom.nombre + ' 💕';
+                lanzarConfeti(50);
+                document.querySelectorAll('.photo-card').forEach((card, i) => {
+                    setTimeout(() => {
+                        card.style.transform = 'scale(1.05) rotate(' + (Math.random() * 6 - 3) + 'deg)';
+                        setTimeout(() => { card.style.transform = ''; }, 400);
+                    }, i * 60);
+                });
+            });
+
+            // ============================================================
+            // 6. CORAZONES
+            // ============================================================
+            let mensajesUsados = [];
+
+            function obtenerMensaje() {
+                if (mensajesUsados.length >= mensajes.length) mensajesUsados = [];
+                const disponibles = mensajes.filter((msg, index) => !mensajesUsados.includes(index));
+                if (disponibles.length === 0) {
+                    mensajesUsados = [];
+                    return mensajes[Math.floor(Math.random() * mensajes.length)];
+                }
+                const elegido = disponibles[Math.floor(Math.random() * disponibles.length)];
+                mensajesUsados.push(mensajes.indexOf(elegido));
+                return elegido;
+            }
+
+            function generarCorazones() {
+                heartGrid.innerHTML = '';
+                const emojis = ['❤️', '💖', '💗', '💓', '💕', '💞', '💘', '♥️', '💝', '💟'];
+                const etiquetas = ['Lusdith', 'Amor', '2025', 'Código', 'Byte', 'Pixel', 'Datos', 'Red', 'Nube', 'Algoritmo',
+                    'Función', 'Loop', 'Variable', 'Constante', 'String'
+                ];
+                for (let i = 0; i < 9; i++) {
+                    const card = document.createElement('div');
+                    card.className = 'heart-card';
+                    const icon = document.createElement('div');
+                    icon.className = 'heart-icon';
+                    icon.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                    const label = document.createElement('div');
+                    label.className = 'heart-label';
+                    label.textContent = etiquetas[Math.floor(Math.random() * etiquetas.length)];
+                    card.appendChild(icon);
+                    card.appendChild(label);
+                    card.addEventListener('click', function() {
+                        const msg = obtenerMensaje();
+                        mensajeDisplayCorazones.textContent = msg;
+                        lanzarConfeti(15);
+                        this.style.transform = 'scale(0.92)';
+                        setTimeout(() => { this.style.transform = ''; }, 150);
+                        const ic = this.querySelector('.heart-icon');
+                        if (ic) {
+                            ic.style.animation = 'none';
+                            setTimeout(() => { ic.style.animation = 'pulse 0.6s ease 2'; }, 10);
+                        }
+                    });
+                    heartGrid.appendChild(card);
+                }
+            }
+
+            btnSorpresaCorazones.addEventListener('click', function() {
+                const frase = frasesSorpresa[Math.floor(Math.random() * frasesSorpresa.length)];
+                const msg = mensajes[Math.floor(Math.random() * mensajes.length)];
+                mensajeDisplayCorazones.textContent = '⚡ ' + frase + ' ⚡  →  ' + msg;
+                lanzarConfeti(50);
+                document.querySelectorAll('.heart-card').forEach((card, i) => {
+                    setTimeout(() => {
+                        card.style.transform = 'rotate(' + (Math.random() * 10 - 5) + 'deg) scale(1.05)';
+                        setTimeout(() => { card.style.transform = ''; }, 500);
+                    }, i * 50);
+                });
+            });
+
+            // ============================================================
+            // 7. MÚSICA
+            // ============================================================
+            let audio = new Audio();
+            let currentSongIndex = 0;
+            let isPlaying = false;
+            let isLooping = false;
+            let isDragging = false;
+
+            function cargarCancion(index) {
+                const cancion = canciones[index];
+                if (!cancion) return;
+                audio.src = cancion.url;
+                currentTitle.textContent = cancion.titulo;
+                currentArtist.textContent = cancion.artista;
+                currentCover.textContent = cancion.cover || '🎵';
+                updatePlaylistActive(index);
+                audio.load();
+                if (isPlaying) {
+                    audio.play().catch(() => {});
+                }
+                actualizarTiempoTotal();
+            }
+
+            function actualizarTiempoTotal() {
+                audio.addEventListener('loadedmetadata', function() {
+                    totalTime.textContent = formatTime(audio.duration);
+                }, { once: true });
+            }
+
+            function formatTime(seconds) {
+                if (isNaN(seconds)) return '0:00';
+                const mins = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return mins + ':' + (secs < 10 ? '0' : '') + secs;
+            }
+
+            function togglePlay() {
+                if (audio.src) {
+                    if (isPlaying) {
+                        audio.pause();
+                        playBtn.textContent = '▶️';
+                    } else {
+                        audio.play().catch(() => {});
+                        playBtn.textContent = '⏸️';
+                    }
+                    isPlaying = !isPlaying;
+                } else {
+                    cargarCancion(0);
+                    isPlaying = true;
+                    playBtn.textContent = '⏸️';
+                }
+            }
+
+            function nextSong() {
+                currentSongIndex = (currentSongIndex + 1) % canciones.length;
+                cargarCancion(currentSongIndex);
+                if (isPlaying) {
+                    audio.play().catch(() => {});
+                }
+            }
+
+            function prevSong() {
+                currentSongIndex = (currentSongIndex - 1 + canciones.length) % canciones.length;
+                cargarCancion(currentSongIndex);
+                if (isPlaying) {
+                    audio.play().catch(() => {});
+                }
+            }
+
+            function updatePlaylistActive(index) {
+                document.querySelectorAll('.playlist-item').forEach((item, i) => {
+                    item.classList.toggle('active', i === index);
+                });
+            }
+
+            function generarPlaylist() {
+                playlistEl.innerHTML = '';
+                canciones.forEach((c, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'playlist-item' + (index === 0 ? ' active' : '');
+                    item.innerHTML = `<span class="num">${index + 1}</span> ${c.titulo}`;
+                    item.addEventListener('click', function() {
+                        currentSongIndex = index;
+                        cargarCancion(index);
+                        if (!isPlaying) {
+                            isPlaying = true;
+                            playBtn.textContent = '⏸️';
+                        }
+                        audio.play().catch(() => {});
+                    });
+                    playlistEl.appendChild(item);
+                });
+            }
+
+            audio.addEventListener('timeupdate', function() {
+                if (!isDragging && audio.duration) {
+                    const progress = (audio.currentTime / audio.duration) * 100;
+                    progressFill.style.width = progress + '%';
+                    currentTime.textContent = formatTime(audio.currentTime);
+                }
+            });
+
+            audio.addEventListener('ended', function() {
+                if (isLooping) {
+                    audio.currentTime = 0;
+                    audio.play().catch(() => {});
+                } else {
+                    nextSong();
+                }
+            });
+
+            progressBar.addEventListener('mousedown', function(e) {
+                isDragging = true;
+                const rect = this.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                if (audio.duration) {
+                    audio.currentTime = x * audio.duration;
+                    progressFill.style.width = (x * 100) + '%';
+                }
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (isDragging) {
+                    const rect = progressBar.getBoundingClientRect();
+                    let x = (e.clientX - rect.left) / rect.width;
+                    x = Math.max(0, Math.min(1, x));
+                    if (audio.duration) {
+                        audio.currentTime = x * audio.duration;
+                        progressFill.style.width = (x * 100) + '%';
+                        currentTime.textContent = formatTime(audio.currentTime);
+                    }
+                }
+            });
+
+            document.addEventListener('mouseup', function() {
+                isDragging = false;
+            });
+
+            playBtn.addEventListener('click', togglePlay);
+            nextBtn.addEventListener('click', nextSong);
+            prevBtn.addEventListener('click', prevSong);
+            loopBtn.addEventListener('click', function() {
+                isLooping = !isLooping;
+                this.textContent = isLooping ? '🔁 ON' : '🔁';
+                this.style.borderColor = isLooping ? '#00ffc8' : 'rgba(0, 255, 200, 0.15)';
+                this.style.background = isLooping ? 'rgba(0, 255, 200, 0.15)' : 'rgba(0, 255, 200, 0.05)';
+            });
+
+            cargarCancion(0);
+
+            // ============================================================
+            // 8. INICIALIZAR
+            // ============================================================
+            generarFotos();
+            generarCorazones();
+            generarPlaylist();
+
+            setTimeout(() => lanzarConfeti(25), 500);
+
+            console.log('💖 ¡Detalle creado para LUSDITH 2025! 💖');
+            console.log('📸 Edita el array "fotos" con tus imágenes');
+            console.log('🎵 Edita el array "canciones" con tu música');
+            console.log('💬 Edita el array "mensajes" con tus frases personalizadas');
+
+        })();
+    </script>
+</body>
+</html>
